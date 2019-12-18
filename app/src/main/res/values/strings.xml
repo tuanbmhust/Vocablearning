@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Vocablearning</string>
+    <string name="vocabulary">Vocabulary</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="username">Username</string>
+    <string name="example_email_com">example@email.com</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_confirmation">Password Confirmation</string>
+    <string name="logo">Logo</string>
+    <string name="change_password">Change Password</string>
+    <string name="log_out">Log out</string>
+    <string name="look_up_for_words_here">Look up for words here</string>
+    <string name="key_and_its_type">Key and its type</string>
+    <string name="traits">Traits</string>
+    <string name="meaning">Meaning</string>
+    <string name="log_in">Log in</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="request_login">Request login</string>
+    <string name="key">Key</string>
+    <string name="sign_up">Sign up</string>
+    <string name="your_username">YourUsername</string>
+    <string name="your_password">YourPassword</string>
+    <string name="confirm_your_password">ConfirmYourPassword</string>
+    <string name="your_current_password">Your current password</string>
+    <string name="your_new_password">Your new password</string>
+    <string name="confirm_your_new_password">Confirm your new password</string>
+    <string name="change">CHANGE</string>
+    <string name="word">Word</string>
+    <string name="hashtag">Hashtag</string>
+    <string name="select_from_existed_tags">Select from existed tags</string>
+    <string name="save">Save</string>
+</resources>
