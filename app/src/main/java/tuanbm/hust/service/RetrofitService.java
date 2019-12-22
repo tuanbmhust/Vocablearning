@@ -1,8 +1,6 @@
 package tuanbm.hust.service;
 
 
-import com.google.gson.JsonObject;
-
 import java.util.List;
 
 import retrofit2.Call;
@@ -16,9 +14,9 @@ import tuanbm.hust.object.ChangePwdUser;
 import tuanbm.hust.object.LoginToken;
 import tuanbm.hust.object.LoginUser;
 import tuanbm.hust.object.ResponseTags;
-import tuanbm.hust.object.ResponseWords;
 import tuanbm.hust.object.SignupResponse;
 import tuanbm.hust.object.SignupUser;
+import tuanbm.hust.object.TagWordPost;
 import tuanbm.hust.object.Word;
 import tuanbm.hust.object.WordPost;
 
@@ -44,8 +42,14 @@ public interface RetrofitService {
     Call<LoginToken> logout(@Header("Authorization") String authHeader);
     @GET("api/user_word/show_list")
     Call<ResponseTags> getTags(@Header("Authorization") String authHeader);
+
+
+
     @POST("api/user_word/show_list_word")
-    Call<List<String>> getWords(@Header("Authorization") String authHeader, @Body WordPost wordPost);
+    Call<List<List<Word>>> getWords(@Header("Authorization") String authHeader, @Body TagWordPost tagWordPost);
+
+
+
     @Headers({
             "Content-Type:application/x-www-form-urlencoded",
     })
@@ -54,6 +58,4 @@ public interface RetrofitService {
     @POST("api/auth/re_pass")
     Call<LoginToken> re_pass(@Header("Authorization") String authHeader, @Body ChangePwdUser changePwdUser);
 
-    @GET("/api/user_word/show")
-    Call<JsonObject> getUserWord(@Header("Authorization") String authHeader);
 }

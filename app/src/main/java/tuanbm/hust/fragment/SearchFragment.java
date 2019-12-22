@@ -1,7 +1,6 @@
 package tuanbm.hust.fragment;
 
 import android.content.Intent;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -154,7 +153,6 @@ public class SearchFragment extends BaseFragment {
                 new RecyclerViewItemClickListener.OnItemClickListener() {
                     @Override
                     public void OnItemClick(View view, int position) {
-                        Intent intent = new Intent(getActivity(), WordDetailActivity.class);
                         Word word = mWords.get(position);
                         String keyAndType = getKeyAndType(word);
 
@@ -167,7 +165,8 @@ public class SearchFragment extends BaseFragment {
                         for (String meaning: word.getMeaning())
                             meanings.append(" - ").append(meaning).append("\n");
                         String meaningList = meanings.toString();
-
+                        //Call intent and transfer data
+                        Intent intent = new Intent(getActivity(), WordDetailActivity.class);
                         intent.putExtra(Constant.KEY, keyAndType);
                         intent.putExtra(Constant.WORD_ID, word.getId());
                         intent.putExtra(Constant.WORD, word.getKey());

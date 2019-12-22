@@ -18,7 +18,6 @@
             android:contentDescription="@string/logo"
             android:src="@drawable/app_logo" />
 
-
         <TextView
             android:id="@+id/tv_email"
             android:layout_width="match_parent"

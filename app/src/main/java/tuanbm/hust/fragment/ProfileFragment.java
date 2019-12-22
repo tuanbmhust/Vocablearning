@@ -28,8 +28,9 @@ public class ProfileFragment extends BaseFragment {
 
     @Override
     protected void setupUI() {
-        String emailBox = "Welcome, " + SharedPreferencesSingleton.getInstance().get(Constant.USER_EMAIL,String.class);
+        String emailBox = "Email:  " + SharedPreferencesSingleton.getInstance().get(Constant.USER_EMAIL,String.class);
         tvEmail.setText(emailBox);
+        //Change password
         btnChangePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,6 +39,7 @@ public class ProfileFragment extends BaseFragment {
             }
         });
 
+        //Logout
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

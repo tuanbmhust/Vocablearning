@@ -31,4 +31,6 @@
     <string name="hashtag">Hashtag</string>
     <string name="select_from_existed_tags">Select from existed tags</string>
     <string name="save">Save</string>
+    <string name="tag">Tag</string>
+    <string name="text">text</string>
 </resources>

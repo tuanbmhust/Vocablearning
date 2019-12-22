@@ -12,7 +12,8 @@
         android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MarkWordActivity"/>
+        <activity android:name=".activity.TagWordActivity"></activity>
+        <activity android:name=".activity.MarkWordActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.ChangePasswordActivity" />
         <activity android:name=".activity.SignUpActivity" />

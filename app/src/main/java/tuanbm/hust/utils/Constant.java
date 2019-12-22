@@ -12,4 +12,6 @@ public class Constant {
     public static final String LOGIN_TOKEN = "LOG IN TOKEN";
     public static final String WORD_ID = "WORD ID";
     public static final String PASSWORD = "PASSWORD";
+    public static final String TAG = "TAG";
+    public static final String SELECTED_FRAGMENT = "SELECTED FRAGMENT";
 }

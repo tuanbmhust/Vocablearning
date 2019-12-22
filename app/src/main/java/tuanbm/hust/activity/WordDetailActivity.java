@@ -22,6 +22,7 @@ public class WordDetailActivity extends BaseActivity {
 
     @Override
     protected void setupUI() {
+        //Get data from SearchFragment
         Intent intent = getIntent();
         word = intent.getStringExtra(Constant.WORD);
         wordId = intent.getStringExtra(Constant.WORD_ID);
@@ -29,7 +30,7 @@ public class WordDetailActivity extends BaseActivity {
         tvTraits.setText(intent.getStringExtra(Constant.TRAITS));
         tvMeaning.setText(intent.getStringExtra(Constant.MEANING));
         tvMeaning.setMovementMethod(new ScrollingMovementMethod());
-
+        //Setup toolbar
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(intent.getStringExtra(Constant.WORD));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

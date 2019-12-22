@@ -62,8 +62,22 @@ public class MainActivity extends BaseActivity {
             }
         });
         setupFragment(getSupportFragmentManager(), viewPager);
-        botNavView.setSelectedItemId(R.id.navigation_search);
-        viewPager.setCurrentItem(1);
+        switch (getIntent().getIntExtra(Constant.SELECTED_FRAGMENT, 1)) {
+            case 0:
+                botNavView.setSelectedItemId(R.id.navigation_vocab);
+                viewPager.setCurrentItem(0);
+                break;
+            case 1:
+                botNavView.setSelectedItemId(R.id.navigation_search);
+                viewPager.setCurrentItem(1);
+                break;
+            case 2:
+                botNavView.setSelectedItemId(R.id.navigation_profile);
+                viewPager.setCurrentItem(2);
+                break;
+        }
+
+
         viewPager.setOnPageChangeListener(new PageChange());
     }
 
